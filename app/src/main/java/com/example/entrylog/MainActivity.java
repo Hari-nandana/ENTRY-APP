@@ -1,5 +1,6 @@
 package com.example.entrylog;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -34,7 +35,15 @@ public class MainActivity extends AppCompatActivity {
            public void onClick(View v) {
                String username=e1.getText().toString();
                String password=e2.getText().toString();
-               Toast.makeText(getApplicationContext(),username+" "+password,Toast.LENGTH_LONG).show();
+               if(username.equals("admin")&&password.equals("1234"))
+               {
+                   Intent i=new Intent(getApplicationContext(), LogEntry.class);
+                   startActivity(i);
+               }
+               else
+               {
+                   Toast.makeText(getApplicationContext(),"InvalidPassword",Toast.LENGTH_LONG).show();
+               }
            }
        });
 
