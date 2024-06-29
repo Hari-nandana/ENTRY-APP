@@ -4,6 +4,7 @@
     android:padding="70px"
     android:gravity="center"
     android:background="#82BCB6"
+
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:layout_width="match_parent"
@@ -16,14 +17,12 @@
         android:hint="Enter your Username"
         android:textStyle="italic"
         android:id="@+id/name"
-        />
+        android:drawableLeft="@drawable/baseline_person_add_alt_24"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ADMISSIOM NUMBER"
-        android:textColor="@color/black"
-
-        />
+        android:textColor="@color/black"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,30 +30,26 @@
         android:hint="Enter your Admission Number"
         android:id="@+id/adno"
         android:textStyle="italic"
-        />
+        android:drawableLeft="@drawable/baseline_remove_red_eye_24"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SYSTEM NUMBER"
-        android:textColor="@color/black"
-
-        />
+        android:textColor="@color/black"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="Enter your Sytem Number"
         android:id="@+id/syno"
+        android:drawableLeft="@drawable/baseline_computer_24"
 
-        android:textStyle="italic"
-        />
+        android:textStyle="italic"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="DEPARTMENT"
-        android:textColor="@color/black"
-
-        />
+        android:textColor="@color/black"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -62,13 +57,13 @@
         android:hint="Enter your Department"
         android:id="@+id/dept"
         android:textStyle="italic"
-        />
+        android:drawableLeft="@drawable/baseline_people_alt_24"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ADD"
-        android:background="@color/black"
-        android:textColor="#F3F5F5"
+        android:background="#F3F5F5"
+        android:textColor="#232525"
         android:layout_margin="10px"
         android:id="@+id/add"/>
 
@@ -76,8 +71,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LOGOUT"
-        android:background="@color/black"
-        android:textColor="#F3F5F5"
+        android:background="@color/white"
+        android:textColor="#1B1D1D"
         android:layout_margin="10px"
         android:id="@+id/logout"/>
 

@@ -3,8 +3,14 @@
     android:orientation="vertical"
     android:padding="70px"
     android:gravity="center"
-    android:background="#82BCB6"
+    android:background="@drawable/background"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,23 +21,19 @@
         android:layout_height="wrap_content"
         android:hint="Enter your Username"
         android:textStyle="italic"
-        android:id="@+id/uname"
-        />
+        android:id="@+id/uname"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="PASSWORD"
-        android:textColor="@color/black"
-
-        />
+        android:textColor="@color/black"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:hint="Enter your Password"
         android:id="@+id/pass"
-        android:textStyle="italic"
-        />
+        android:textStyle="italic"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
